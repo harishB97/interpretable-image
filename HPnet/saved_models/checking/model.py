@@ -21,11 +21,6 @@ model_urls = {
 
 class VGG_proto(nn.Module):
 
-    """
-    This class can be used with any feature architecture (such as vgg, densenet, etc,.)
-    For consistency with original implementation, continuing the name "VGG_proto" so that loading old models will be easier
-    """
-
     def __init__(self, features, root, proto_layer_rf_info, num_prototypes_per_class, prototype_dimension, init_weights=True):
         super(VGG_proto, self).__init__()
 

@@ -1,0 +1,330 @@
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 1104
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 1104
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 168
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 168
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 1104
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 168
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 168
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 168
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 1104
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+training set size: 5695
+push set size: 5695
+valid set size: 5508
+effective batch size: 25
+latent space dim: 32
+number of prototypes: 2624
+cluster cost coeff: 0.001
+sep cost coeff: 0.060
+start training
+valid
+	time: 	31.78
+	cross ent: 	6.76
+	noise cross ent: 	0.00
+	cluster: 	6.51
+	separation: 	22.40
+	l1: 	5423.93
+	coarse acc: 	7.95%
+	fine acc: 	0.56%
+epoch: 	0
+coarse warm
+train
+	time: 	59.57
+	cross ent: 	2.40
+	noise cross ent: 	2025.39
+	cluster: 	0.18
+	separation: 	0.61
+	l1: 	961.13
+	coarse acc: 	41.30%
+	fine acc: 	0.56%
+optimize through protos
+epoch: 	0
+through protos
+train
+	time: 	104.18
+	cross ent: 	6.06
+	noise cross ent: 	2024.93
+	cluster: 	8.68
+	separation: 	16.71
+	l1: 	5423.93
+	coarse acc: 	43.18%
+	fine acc: 	0.53%
+epoch: 	1
+through protos
+train
+	time: 	104.80
+	cross ent: 	5.87
+	noise cross ent: 	2026.65
+	cluster: 	10.35
+	separation: 	13.88
+	l1: 	5423.93
+	coarse acc: 	43.18%
+	fine acc: 	0.53%
+epoch: 	2
+through protos
+train
+	time: 	104.79
+	cross ent: 	5.87
+	noise cross ent: 	2026.59
+	cluster: 	12.88
+	separation: 	10.96
+	l1: 	5423.93
+	coarse acc: 	43.18%
+	fine acc: 	0.53%
+epoch: 	3
+through protos
+train
+	time: 	103.89
+	cross ent: 	5.87
+	noise cross ent: 	2026.52
+	cluster: 	16.03
+	separation: 	7.62
+	l1: 	5423.93
+	coarse acc: 	43.18%
+	fine acc: 	0.53%
+epoch: 	4
+through protos
+train
+	time: 	104.70
+	cross ent: 	5.87
+	noise cross ent: 	2026.51
+	cluster: 	18.89
+	separation: 	4.66
+	l1: 	5423.93
+	coarse acc: 	43.18%
+	fine acc: 	0.53%
+	push
+	Executing push ...
+	push time: 	146.84159588813782
+valid
+	time: 	31.43
+	cross ent: 	6.75
+	noise cross ent: 	0.00
+	cluster: 	0.00
+	separation: 	27.16
+	l1: 	5423.93
+	coarse acc: 	2.18%
+	fine acc: 	0.54%
+	new best: 0.54       old best: 0.00
+last layers
+train
+	time: 	68.29
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	0.00
+	separation: 	23.75
+	l1: 	nan
+	coarse acc: 	2.28%
+	fine acc: 	0.53%
+valid
+	time: 	31.52
+	cross ent: 	nan
+	noise cross ent: 	0.00
+	cluster: 	0.00
+	separation: 	27.16
+	l1: 	nan
+	coarse acc: 	2.07%
+	fine acc: 	0.47%
+optimize joint
+epoch: 	0
+joint
+train
+	time: 	112.48
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+epoch: 	1
+joint
+train
+	time: 	110.98
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+epoch: 	2
+joint
+train
+	time: 	111.90
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+epoch: 	3
+joint
+train
+	time: 	111.22
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+epoch: 	4
+joint
+train
+	time: 	111.99
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+epoch: 	5
+joint
+train
+	time: 	112.20
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+	push
+	Executing push ...
+	push time: 	32.118226528167725
+valid
+	time: 	31.45
+	cross ent: 	nan
+	noise cross ent: 	0.00
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.07%
+	fine acc: 	0.47%
+last layers
+train
+	time: 	68.62
+	cross ent: 	nan
+	noise cross ent: 	nan
+	cluster: 	nan
+	separation: 	nan
+	l1: 	nan
+	coarse acc: 	2.11%
+	fine acc: 	0.53%
+valid
+	time: 	31.53
+	cross ent: 	nan
+	noise cross ent: 	0.00

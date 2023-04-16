@@ -14,7 +14,7 @@ class Node:
 
     def add_children(self, names, labels = None):
         if type(names) is not list:
-            names = [names];
+            names = [names]
         if labels is None:
             labels = [i for i in range(len(self.children),len(self.children)+len(names))]
         names.sort()
@@ -164,11 +164,18 @@ class Node:
         return name in self.descendents        
 
 
+    # def closest_descendent_for(self,name):
+    #     breakpoint()
+    # 	if name in self.children_names(): 
+    # 		return self.get_node(name)
+    # 	else:
+    #         return [child for child in self.children if name in child.descendents][0]
+        
     def closest_descendent_for(self,name):
-    	if name in self.children_names(): 
-    		return self.get_node(name)
-    	else:
-        	return [child for child in self.children if name in child.descendents][0]
+        if name in self.children_names():
+            return self.get_node(name)
+        else:
+            return [child for child in self.children if name in child.descendents][0]
 
 
     def has_logits(self):
@@ -198,23 +205,39 @@ class Node:
 
 
     def unwrap_names_of_joint(self,names):
-        # poorly written function for unwrapping nested lists up to depth 3 -- will cause bug if class hierarchy is too deep
+        # # poorly written function for unwrapping nested lists up to depth 3 -- will cause bug if class hierarchy is too deep
+        # new_list = []
+        # for item in names:
+        #     if type(item) is not list:
+        #         new_list.append(item)
+        #     else:
+        #         for subitem in item:
+        #             if type(subitem) is not list:
+        #                 new_list.append(subitem)
+        #             else:
+        #                 for subsubitem in subitem:
+        #                     if type(subsubitem) is not list:
+        #                         new_list.append(subsubitem)
+        #                     else:
+        #                         for subsubsubitem in subsubitem:
+        #                             if type(subsubsubitem) is not list:
+        #                                 new_list.append(subsubsubitem)
+
+        def contains_list(names):
+            for name in names:
+                if type(name) is list:
+                    return True
+            return False
+        
+        if not contains_list(names):
+            return names
+        
         new_list = []
         for item in names:
             if type(item) is not list:
-                new_list.append(item)
+                new_list += [item]
             else:
-                for subitem in item:
-                    if type(subitem) is not list:
-                        new_list.append(subitem)
-                    else:
-                        for subsubitem in subitem:
-                            if type(subsubitem) is not list:
-                                new_list.append(subsubitem)
-                            else:
-                                for subsubsubitem in subsubitem:
-                                    if type(subsubsubitem) is not list:
-                                        new_list.append(subsubsubitem)
+                new_list += self.unwrap_names_of_joint(item)
         return new_list
 
 
